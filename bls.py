@@ -9,8 +9,7 @@ out_path='output/'
 headers = {'Content-type': 'application/json'}
 education_list=[]
 data = json.dumps({"seriesid": ['CXUEDUCATNLB0806M','CXUEDUCATNLB0807M','CXUEDUCATNLB0808M','CXUEDUCATNLB0809M',
-'CXUEDUCATNLB0902M','CXUEDUCATNLB0903M','CXUEDUCATNLB0904M',
-'CXUEDUCATNLB0905M','CXUEDUCATNLB1002M','CXUEDUCATNLB1003M',
+'CXUEDUCATNLB1002M','CXUEDUCATNLB1003M',
 'CXUEDUCATNLB1004M','CXUEDUCATNLB1005M', 'CXUEDUCATNLB1102M', 
 'CXUEDUCATNLB1103M', 'CXUEDUCATNLB1104M', 'CXUEDUCATNLB1105M', 
 'CXUEDUCATNLB1302M', 'CXUEDUCATNLB1303M', 'CXUEDUCATNLB1304M', 
@@ -45,19 +44,29 @@ for series in json_data['Results']['series']:
 #    x=prettytable.PrettyTable(["series id","year","period","value","footnotes"])
     seriesid_list=[]
     seriesId = series['seriesID']
+    if 'LB08' in seriesId:
+        group = 1
+    elif 'LB10' in seriesId:
+        group =2
+    elif 'LB11' in seriesId:
+        group =3
+    else:
+        group = 4
     for item in series['data']:
         year = item['year']
         value = item['value']        
         education_list.append({"grouping":titles[seriesId],
-        "year":year,
-        "value":value})
+                               "group":group,
+                               "year":year,
+                               "value":value})
         seriesid_list.append({"grouping":titles[seriesId],
-        "year":year,
-        "value":value})
+                              "group":group,
+                              "year":year,
+                              "value":value})
     seriesid_df=pd.DataFrame(seriesid_list)
-    seriesid_df=seriesid_df[["grouping","year","value"]]
+    seriesid_df=seriesid_df[["grouping","group","year","value"]]
     seriesid_df.to_csv(out_path + seriesId +'.csv ',index=False,header=True)
 education_df=pd.DataFrame(education_list) 
-education_df=education_df[["grouping","year","value"]]
+education_df=education_df[["grouping","group","year","value"]]
 education_df.to_csv(csv_out,index=False,header=True)       
 

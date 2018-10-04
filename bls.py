@@ -19,36 +19,45 @@ data = json.dumps({"seriesid": ['CXUEDUCATNLB0806M','CXUEDUCATNLB0807M','CXUEDUC
 p = requests.post('https://api.bls.gov/publicAPI/v2/timeseries/data/', data=data, headers=headers)
 json_data = json.loads(p.text)
 #print(json.dumps(json_data,indent=4))
+titles={'CXUEDUCATNLB0806M':'area_urban',
+ 'CXUEDUCATNLB0807M':'area_urban_central_city',
+ 'CXUEDUCATNLB0808M':'area_urban_other',
+ 'CXUEDUCATNLB0809M':'area_rural',
+ 'CXUEDUCATNLB1002M':'origin_hispanic_latino',
+ 'CXUEDUCATNLB1003M':'origin_not_hispanic_latino',
+ 'CXUEDUCATNLB1004M':'not_hispanic_white_other',
+ 'CXUEDUCATNLB1005M':'not_hispanic_black_african-american', 
+ 'CXUEDUCATNLB1102M':'region_northeast', 
+ 'CXUEDUCATNLB1103M':'region_midwest', 
+ 'CXUEDUCATNLB1104M':'region_south', 
+ 'CXUEDUCATNLB1105M':'region_west', 
+ 'CXUEDUCATNLB1302M':'ed_total_less_than_college_graduate', 
+ 'CXUEDUCATNLB1303M':'ed_less_than_highschool_graduate', 
+ 'CXUEDUCATNLB1304M':'ed_highschool_graduate', 
+ 'CXUEDUCATNLB1305M':'ed_highschool_graduate_some_college',
+ 'CXUEDUCATNLB1306M':'ed_associate_degree',
+ 'CXUEDUCATNLB1307M':'ed_total_college_graduate', 
+ 'CXUEDUCATNLB1308M':'ed_bachelor_degree', 
+ 'CXUEDUCATNLB1309M':'ed_master_professional_doctorate'}
+
+education_list=[]
 for series in json_data['Results']['series']:
 #    x=prettytable.PrettyTable(["series id","year","period","value","footnotes"])
     seriesid_list=[]
     seriesId = series['seriesID']
     for item in series['data']:
         year = item['year']
-        period = item['periodName']
-        value = item['value']
-        footnotes=""
-        for footnote in item['footnotes']:
-            if footnote:
-                footnotes = footnotes + footnote['text'] + ','
-        education_list.append({"series id":seriesId,
+        value = item['value']        
+        education_list.append({"grouping":titles[seriesId],
         "year":year,
-        "period name":period,
-        "value":value,
-        "footnote":footnotes})
-        seriesid_list.append({"series id":seriesId,
+        "value":value})
+        seriesid_list.append({"grouping":titles[seriesId],
         "year":year,
-        "period name":period,
-        "value":value,
-        "footnote":footnotes})
+        "value":value})
     seriesid_df=pd.DataFrame(seriesid_list)
-    seriesid_df=seriesid_df[["series id","year","period name","value"]]
+    seriesid_df=seriesid_df[["grouping","year","value"]]
     seriesid_df.to_csv(out_path + seriesId +'.csv ',index=False,header=True)
 education_df=pd.DataFrame(education_list) 
-education_df=education_df[["series id","year","period name","value"]]
+education_df=education_df[["grouping","year","value"]]
 education_df.to_csv(csv_out,index=False,header=True)       
-  #      if 'M01' <= period <= 'M12':
-    #    x.add_row([seriesId,year,period,value,footnotes[0:-1]])
-    # output = open(seriesId + '.txt','w')
-    # output.write (x.get_string())
-    # output.close()
+

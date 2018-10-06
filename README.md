@@ -52,3 +52,24 @@ LB08	08	Type of area: urban: other urban(from 2003)	1	T	8080
 
 LB08	09	Type of area: rural	0	T	8090
 
+----------------------------------------------------------------------------------------------------
+CENSUS DATA
+
+ACS 1-Year Estimates by Geographic Region
+
+Years of data: 2017, 2016, 2015, 2012, 2011, 2010
+
+Age and Sex (S0101)
+
+Educational Attainment (S1501)
+
+Poverty Status in the Past 12 Months (S1701)
+
+Mean Income in the Past 12 Months (in 2017 Inflation-Adjusted Dollars) (S1902)
+Employment Status (S2301)
+
+Race (B02001)
+
+Hispanic or Latino Origin (B03003)
+
+Educational Attainment and Employment Status by Language Spoken at Home for the Population 25 Years and Over (C16010)

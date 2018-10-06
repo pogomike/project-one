@@ -66,6 +66,7 @@ Educational Attainment (S1501)
 Poverty Status in the Past 12 Months (S1701)
 
 Mean Income in the Past 12 Months (in 2017 Inflation-Adjusted Dollars) (S1902)
+
 Employment Status (S2301)
 
 Race (B02001)

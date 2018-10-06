@@ -1,0 +1,6 @@
+GEO.id,GEO.id2,GEO.display-label,HD01_VD01,HD02_VD01,HD01_VD02,HD02_VD02,HD01_VD03,HD02_VD03
+Id,Id2,Geography,Estimate; Total:,Margin of Error; Total:,Estimate; Total: - Not Hispanic or Latino,Margin of Error; Total: - Not Hispanic or Latino,Estimate; Total: - Hispanic or Latino,Margin of Error; Total: - Hispanic or Latino
+0200000US1,1,Northeast Region,55761091,*****,48393646,2014,7367445,2014
+0200000US2,2,Midwest Region,67316297,*****,62441507,4121,4874790,4121
+0200000US3,3,South Region,117257221,*****,97980274,8469,19276947,8469
+0200000US4,4,West Region,73579431,*****,52137596,959,21441835,959

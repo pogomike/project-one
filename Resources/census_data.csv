@@ -1,0 +1,6 @@
+State,County,Population,Median Age,Household Income,Per Capita Income,Poverty Count,Poverty Rate,White,Black or African American,American Indian or Alaska Native,Asian,Hawaiian or Other Pacific Islander,Less Than High School,High School,Some College or Associate's Degree,Bachelor's Degree,Graduate or Professional Degree
+27,"Itasca County, Minnesota",44835.0,44.5,45621.0,23465.0,5166.0,11.52224824355972,42156.0,150.0,1394.0,174.0,0.0,2443.0,10824.0,11911.0,4660.0,1960.0
+27,"Hennepin County, Minnesota",1136522.0,35.9,61328.0,35902.0,134363.0,11.822296444767456,869704.0,130404.0,9343.0,68523.0,515.0,60019.0,151220.0,215800.0,223883.0,111801.0
+27,"Ramsey County, Minnesota",503113.0,34.7,51915.0,28956.0,77325.0,15.369310671757637,365854.0,52512.0,3481.0,55933.0,220.0,32867.0,77123.0,88169.0,76600.0,49465.0
+27,"Stearns County, Minnesota",147927.0,33.1,51779.0,24816.0,17894.0,12.096507060915181,137089.0,3847.0,424.0,2840.0,40.0,9065.0,27904.0,31373.0,14321.0,6804.0
+27,"Steele County, Minnesota",36434.0,38.0,55321.0,25062.0,2717.0,7.457320085634298,34107.0,935.0,35.0,306.0,0.0,2554.0,8625.0,7694.0,3824.0,1505.0

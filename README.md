@@ -14,19 +14,30 @@ from Zillow we are retrieving a smoothed, seasonally adjusted measure of the med
 
 
 Observations from the data
-
-home_val_poverty.png
-
-Household_Income.png
-
-High_School.png
-
-<img height="500" src="https://github.com/pogomike/project-one/blob/master/Output/AssociateDegree.png" />
-
-Bachelor_Degree.png
-
-racecluster.png
-
+Population
+<br>
+<img height="500" src="https://github.com/pogomike/project-one/blob/master/Output/home_val_population.png" />
+<br>
+Poverty
+<br>
+<img height="500" src="https://github.com/pogomike/project-one/blob/master/Output/home_val_poverty2.png" />
+<br>
+Household Income
+<br>
+<img height="500" src="https://github.com/pogomike/project-one/blob/master/Output/Household_Income.png" />
+<br>
+High School Education
+<br>
+<img height="500" src="https://github.com/pogomike/project-one/blob/master/Output/High_School.png" />
+<br>
+College Education
+<br>
+<img height="500" src="https://github.com/pogomike/project-one/blob/master/Output/Bachelor_Degree.png" />
+<br>
+Race Cluster
+<br>
+<img height="500" src="https://github.com/pogomike/project-one/blob/master/Output/racecluster.png" />
+<br>
 Conclusions
 
 Looking at the 5 components we compared to the variation in home prices, population and education are the most closely correlated components. Also looking at all the values it appears that others have some relation, but there is no single component that tells the whole story. Home prices are influenced by many factors.

@@ -14,53 +14,18 @@ from Zillow we are retrieving a smoothed, seasonally adjusted measure of the med
 
 
 Observations from the data
-<img height="700" src="https://github.com/pogomike/project-one/blob/master/Output/AssociateDegree.png" />
 
 home_val_poverty.png
 
-
-
 Household_Income.png
-
-
 
 High_School.png
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img height="100" src="https://github.com/pogomike/project-one/blob/master/Output/AssociateDegree.png" />
 
 Bachelor_Degree.png
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 racecluster.png
-
-
 
 Conclusions
 

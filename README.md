@@ -14,7 +14,7 @@ from Zillow we are retrieving a smoothed, seasonally adjusted measure of the med
 
 
 Observations from the data
-https://github.com/pogomike/project-one/blob/master/Output/AssociateDegree.png
+<img height="700" src="https://github.com/pogomike/project-one/blob/master/Output/AssociateDegree.png" />
 
 home_val_poverty.png
 

@@ -21,7 +21,7 @@ Household_Income.png
 
 High_School.png
 
-<img height="100" src="https://github.com/pogomike/project-one/blob/master/Output/AssociateDegree.png" />
+<img height="500" src="https://github.com/pogomike/project-one/blob/master/Output/AssociateDegree.png" />
 
 Bachelor_Degree.png
 

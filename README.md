@@ -12,8 +12,8 @@ from the Census Bureau we are retrieving: median household income, educational a
 ZILLOW
 from Zillow we are retrieving a smoothed, seasonally adjusted measure of the median estimated home value per square foot per county. All homes within the county.
 
-
 Observations from the data
+
 Population
 <br>
 <img height="500" src="https://github.com/pogomike/project-one/blob/master/Output/home_val_population.png" />
